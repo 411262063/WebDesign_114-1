@@ -1,0 +1,255 @@
+/* ========== 上方預覽區域 ========== */
+#viewArea {
+    transform: translateX(-50%);
+    position: relative;
+    left: 50%;
+    width: 100%;
+    height: min-content;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0px;
+}
+
+/* 左側：縮圖列表 */
+.previewBox {
+    width: 140px;
+    height: 600px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--color-red);
+}
+
+.previewBtn {
+    width: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    background-color: white;
+    border: solid 4px;
+    border-color: rgba(0, 0, 0, 0);
+    transition: all 0.3s;
+}
+
+.previewBtn img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.previewBtn:hover{
+    border-color: var(--color-blue);
+}
+
+/* 按鈕按下後的class */
+.previewBtn.clicked {
+    border-color: var(--color-pink);
+}
+
+#mainImage {
+    width: 600px;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== 下方商品資訊 ========== */
+#infoBox {
+    transform: translateX(-50%);
+    position: relative;
+    left: 50%;
+    width: 1000px;
+    height: 150px;
+    border-radius: 100px;
+    background-color: var(--color-red);
+    padding: 10px 80px;
+}
+
+.info_Name {
+    font-size: 40px;
+    color: var(--color-cream);
+    font-weight: 800px;
+}
+
+.info_Price {
+    font-size: 25px;
+    color: var(--color-cream);
+    font-weight: 600px;
+    margin-bottom: 10px;
+}
+
+.info_Detail {
+    color: var(--color-cream);
+    font-weight: 600px;
+}
+
+#addToCartBtn {
+    position: absolute;
+    right: 50px;
+    bottom: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: var(--color-cream);
+    cursor: pointer;
+
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 50px;
+
+    color: var(--color-brown);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+}
+
+#addToCartBtn:hover {
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.5);
+    color: var(--color-pink);
+}
+
+/* ========== 購買選單 ========== */
+
+.menuBox {
+    /* 預設隱藏 */
+    display: none; 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background-color: rgba(175, 207, 224, 0.8);
+    z-index: 5;
+}
+
+.menuBox.show {
+    display: flex;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-brown);
+}
+
+.closeBtn:hover {
+    color: var(--color-pink);
+}
+
+#optionImg {
+    position: absolute;
+    right: 300px;
+    top: 35px;
+    width: auto;
+    height: 300px;
+    border-radius: 10px;
+    background-color: white;
+    object-fit: contain;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#optionsBox {
+    position: absolute;
+    left: 50px;
+    top: 25px;
+    width: 1000px;
+    height: min-content;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.optionBtn {
+    background-color: var(--color-pink);
+    width: 200px;
+    height: 50px;
+    
+    font-size: 25px;
+    color: white;
+    text-align: center;
+
+    border-radius: 50px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    
+    transition: all 0.3s;
+
+    cursor: pointer;
+}
+
+.optionBtn:hover{
+    border-color: var(--color-red);
+}
+
+/* 按鈕按下後的class */
+.optionBtn.clicked{
+    border-color: var(--color-cream);
+}
+
+/* 數量控制 */
+#quantityBox {
+    position: absolute;
+    left: 50px;
+    top: 200px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    display: flex;
+    gap: 2px;
+}
+
+.quantityBtn{
+    width: 45px;
+    aspect-ratio: 1/1;
+    background-color: var(--color-pink);
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+.quantityText{
+    width: 45px;
+    aspect-ratio: 1/1;
+    text-align: center;
+    line-height: 45px;
+}
+
+/* 確認按鈕 */
+#confirmAddToCartBtn {
+    position: absolute;
+    left: 50px;
+    bottom: 40px;
+
+    width: 200px;
+    height: 50px;
+    background-color: var(--color-brown);
+    border-radius: 50px;
+    border: none;
+
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 50px;
+    
+    color: white;
+    cursor: pointer;
+}
+
+#confirmAddToCartBtn:hover {
+    background-color: var(--color-red);
+    color: var(--color-cream);
+}

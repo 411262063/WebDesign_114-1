@@ -1,0 +1,10 @@
+#calendar {
+    width: 1000px;  /* 固定寬度 */
+    height: min-content;
+    background-color: rgb(248, 248, 248);
+    border-radius: 30px;
+    margin: 50px auto;
+    padding: 20px;
+    margin-top: 0px;
+    margin-bottom: 100px;
+}

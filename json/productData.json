@@ -1,0 +1,181 @@
+[
+    {
+        "id":1,
+        "name": "小文娃娃",
+        "price": 700,
+        "size": "20x20cm",
+        "material": "棉花、布",
+        "description": "可愛的小文娃娃，柔軟舒適",
+        "coverImage":"./images/圖片-周邊/1-小文娃娃2.png",
+        "options": [
+            {
+                "name": "小文娃娃",
+                "image": "./images/圖片-周邊/1-小文娃娃2.png"
+            }
+        ]
+    },
+    {
+        "id":2,
+        "name": "小文吊飾",
+        "price": 180,
+        "size": "5x5cm",
+        "material": "壓克力",
+        "description": "精緻的壓克力吊飾",
+        "coverImage":"./images/圖片-周邊/2-小文吊飾.png",
+        "options": [
+            {
+                "name": "小文吊飾",
+                "image": "./images/圖片-周邊/2-小文吊飾.png"
+            }
+        ]
+    },
+    {
+        "id":3,
+        "name": "仿膠片卡",
+        "price": 100,
+        "size": "16x9cm",
+        "material": "PET、紙",
+        "description": "精美仿膠片卡",
+        "coverImage":"./images/圖片-周邊/3-仿膠片卡-全.jpg",
+        "options": [
+            {
+                "name": "小文款",
+                "image": "./images/圖片-周邊/3-仿膠片卡-小文.jpg"
+            },
+            {
+                "name": "小明款",
+                "image": "./images/圖片-周邊/3-仿膠片卡-小明.jpg"
+            },
+            {
+                "name": "媽媽款",
+                "image": "./images/圖片-周邊/3-仿膠片卡-媽媽.jpg"
+            },
+            {
+                "name": "小文碎裂款",
+                "image": "./images/圖片-周邊/3-仿膠片卡-小文碎裂.jpg"
+            },
+            {
+                "name": "媽媽凝視款",
+                "image": "./images/圖片-周邊/3-仿膠片卡-媽媽凝視.jpg"
+            }
+        ]
+    },
+    {
+        "id":4,
+        "name": "明信片",
+        "price": 15,
+        "size": "16x9cm",
+        "material": "紙",
+        "description": "精美明信片",
+        "coverImage":"./images/圖片-周邊/4-明信片-全.jpg",
+        "options": [
+            {
+                "name": "小文款",
+                "image": "./images/圖片-周邊/4-明信片-小文.jpg"
+            },
+            {
+                "name": "小明款",
+                "image": "./images/圖片-周邊/4-明信片-小明.jpg"
+            },
+            {
+                "name": "媽媽款",
+                "image": "./images/圖片-周邊/4-明信片-媽媽.jpg"
+            },
+            {
+                "name": "小文碎裂款",
+                "image": "./images/圖片-周邊/4-明信片-小文碎裂.jpg"
+            },
+            {
+                "name": "媽媽凝視款",
+                "image": "./images/圖片-周邊/4-明信片-媽媽凝視.jpg"
+            }
+        ]
+    },
+    {
+        "id":5,
+        "name": "A6燙金迷你海報",
+        "price": 70,
+        "size": "10.5x14.8cm",
+        "material": "紙、膠片",
+        "description": "燙金工藝精緻海報",
+        "coverImage": "./images/圖片-周邊/5-燙金海報.jpg",
+        "options": [
+            {
+                "name": "A3燙金海報",
+                "image": "./images/圖片-周邊/5-燙金海報.jpg"
+            }
+        ]
+    },
+    {
+        "id":6,
+        "name": "A3燙金海報",
+        "price": 150,
+        "size": "29.7x42.0cm",
+        "material": "紙、膠片",
+        "description": "燙金工藝精緻海報",
+        "coverImage": "./images/圖片-周邊/5-燙金海報.jpg",
+        "options": [
+            {
+                "name": "A3燙金海報",
+                "image": "./images/圖片-周邊/5-燙金海報.jpg"
+            }
+        ]
+    },
+    {
+        "id":7,
+        "name": "壓克力色紙",
+        "price": 250,
+        "size": "20x15cm",
+        "material": "2mm厚壓克力、閃底工藝",
+        "description": "壓克力色紙",
+        "coverImage": "./images/圖片-周邊/7-壓克力色紙.png",
+        "options": [
+            {
+                "name": "壓克力色紙",
+                "image": "./images/圖片-周邊/7-壓克力色紙.png"
+            }
+        ]
+    },
+    {
+        "id":8,
+        "name": "角色圓形徽章",
+        "price": 60,
+        "size": "70x43mm",
+        "material": "馬口鐵、燙金立體雷射銀",
+        "description": "角色圓形徽章",
+        "coverImage": "./images/圖片-周邊/8-徽章-全.png",
+        "options": [
+            {
+                "name": "小文款",
+                "image": "./images/圖片-周邊/8-徽章-小文.png"
+            },
+            {
+                "name": "小明款",
+                "image": "./images/圖片-周邊/8-徽章-小明.png"
+            }
+        ]
+    },
+    {
+        "id":9,
+        "name": "角色立牌",
+        "price": 300,
+        "size": "未指定",
+        "material": "壓克力",
+        "description": "角色立牌",
+        "coverImage": "./images/圖片-周邊/9-立牌-全.png",
+        "options": [
+            {
+                "name": "小文款",
+                "image": "./images/圖片-周邊/9-立牌-小文.png"
+            },
+            {
+                "name": "小明款",
+                "image": "./images/圖片-周邊/9-立牌-小明.png"
+            },
+            {
+                "name": "媽媽款",
+                "image": "./images/圖片-周邊/9-立牌-媽媽.png"
+            }
+        ]
+    }
+]

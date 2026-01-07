@@ -1,0 +1,307 @@
+body {
+    background-color: var(--color-cream);
+    /* 漸層 */
+    background-image: linear-gradient(rgba(255, 236, 226, 0.7), rgba(255, 236, 226, 0.7)),
+        url(../images/圖片-所有頁面通用/場景2.jpeg);
+
+    /* 填滿整個視窗 */
+    background-size: cover; 
+    /* 圖片置中 */
+    background-position: center;  
+    
+    /* 固定背景 */
+    background-attachment: fixed;  
+    background-repeat: no-repeat;  
+
+    /* body本身也有一點margin 會導致下面空一條 */
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans TC", "Microsoft JhengHei", "微軟正黑體", sans-serif;
+}
+
+:root {
+    --color-pink: #c57473;
+    --color-cream: #ffece2;
+    --color-blue: #afcfe0;
+    --color-red: #8b4f4b;
+    --color-brown: #4e3938;
+
+    --fc-daygrid-event-dot-width: 8px;
+}
+
+.area {
+    position: relative;
+    margin-bottom: 100px;
+    height: min-content;
+}
+
+.titleBox {
+    height: 200px;
+    margin: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.titleBox h1 {
+    margin: 0 !important;
+    padding: 0;
+    line-height: 1.2;
+
+    font-size: 55px;
+    color: var(--color-brown);
+    font-weight: 700;
+}
+
+
+.titleBox h2 {
+    margin: 0 !important;
+    padding: 0;
+    line-height: 1.2;
+
+    font-size: 30px;
+    color: var(--color-brown);
+    font-weight: 500;
+}
+
+.triangleDivider {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 51.6px solid var(--color-brown);
+}
+
+.traingle0 {
+    width: 0px;
+    height: 0px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 25.8px solid #fff;
+}
+
+/*==================== 底部sns =====================*/
+#snsBox {
+    /*  給他黏在畫面底部 
+        fixed是以視窗本身為參考的固定定位，不受滾動影響 (可以放在內容前面)
+        sticky是隨著滾動的固定定位，會受相對位置影響 (放在內容前面的話也會黏在上面)
+    */
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 75px;
+    background-color: var(--color-brown);
+    z-index: 5;
+}
+
+.snsItem {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.snsItem img {
+    width: 50px;
+    height: 50px;
+}
+
+/*==================== 通用選單樣式 =====================*/
+.menuBg{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 20%;
+    width: 500px;
+    height: 600px;
+    background-image: url(../images/框/框_主選單2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+}
+
+/* 主選單 */
+.mainMenu {
+
+    width: 500px;
+    height: min-content;
+
+    /* 彈性排列 水平 */
+    display: flex;
+    /* 包住 寬度不夠時換行 */
+    flex-wrap: wrap;
+    /* 水平置中 */
+    justify-content: center;
+    /* 垂直置中 */
+    align-items: center;
+    padding-bottom: 25px;
+    gap: 20px;
+}
+
+.navItem {
+    width: 200px;
+    height: 76px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.navItem::before {
+    /* 不知道為甚麼但就是要加這個 */
+    content: '';
+    /* 並排 */
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(/images/圖片-所有頁面通用/星星@2x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.navItem a {
+    color: var(--color-brown) !important;
+    text-decoration: none;
+}
+
+.navItem a:hover {
+    color: var(--color-pink) !important;
+}
+
+.navItem a:visited {
+    color: var(--color-red);
+}
+
+.navItem h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: inherit;
+}
+
+.navItem h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: inherit;
+}
+
+.logotype {
+    /* 占據一排 */
+    display: block;
+    background-image: url(/images/圖片-所有頁面通用/左上角標準字.png);
+}
+
+/*==================== 每個分頁的共同按鈕 =====================*/
+#globalBox{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+}
+
+#globalBox button{
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* 標準字按鈕 */
+#logoBtn {
+    left: 20px;
+    width: 150px;
+    height: 80px;
+    background-image: url(../images/圖片-所有頁面通用/左上角標準字.png);
+    background-size: contain;
+    transition: transform 0.3s;
+}
+
+#logoBtn:hover {
+    transform: scale(1.05);
+}
+
+/* home按鈕 */
+#homeBtn {
+    right: 100px;
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/圖片-所有頁面通用/home.png);
+    background-size: cover;
+    transition: transform 0.3s;
+}
+
+#homeBtn:hover {
+    transform: scale(1.1);
+}
+
+/* menu按鈕 */
+#menuBtn {
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/圖片-所有頁面通用/menu.png);
+    background-size: cover;
+    transition: transform 0.3s;
+    margin-top: 5px;
+}
+
+#menuBtn:hover {
+    transform: scale(1.1) rotate(90deg);  /* 放大 + 旋轉 */
+}
+
+/* ==================== 每個分頁的主選單 ==================== */
+#menuWindow {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    /* 螢幕高度 */
+    height: 100vh;
+    background-color: rgba(255, 236, 226, 0.7);
+}
+
+.menuWindow_left .menuBg .mainMenu{
+    position: relative;
+    left: -10px;
+}
+
+#menuWindow.show {
+    display: flex;
+    z-index: 9;
+}
+
+.menuWindow_left {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;     
+    justify-content: center;  
+    padding-top: 30px;
+}
+
+
+.menuWindow_right {
+    position: relative;
+    width: 50%;
+    height: 100%; 
+    background-image: url(../images/圖片-所有頁面通用/主視覺海報.jpg);
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+}

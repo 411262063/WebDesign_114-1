@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>活動日程</title>
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/activity.css">
+    
+    <!-- FullCalendar的CSS -->
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.20/index.global.min.css' rel='stylesheet' />
+
+    <!-- FullCalendar的JS -->
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.20/index.global.min.js'></script>
+
+    <script src="./js/common.js"></script>
+    <script src="./js/activity.js"></script>
+
+</head>
+
+<body>
+    <!-- 底部sns -->
+    <div id="snsBox">
+        <a href="https://x.com/?lang=zh-Hant" class="snsItem">
+            <img src="./images/圖片-所有頁面通用/sns-X.png" alt="sns-X">
+        </a>
+        <a href="https://www.instagram.com/crazy_hamster_01_19/" class="snsItem">
+            <img src="./images/圖片-所有頁面通用/sns-IG.png" alt="sns-IG">
+        </a>
+        <a href="https://youtu.be/0m8GxerTH4w" class="snsItem">
+            <img src="./images/圖片-所有頁面通用/sns-YT.png" alt="sns-YT">
+        </a>
+    </div>
+
+    <!-- 全域按鈕 -->
+    <div id="globalBox">
+        <button id="logoBtn"></button>
+        <button id="homeBtn"></button>
+        <button id="menuBtn"></button>
+    </div>
+
+    <!-- 全螢幕選單 -->
+    <div id="menuWindow">
+        <div class="menuWindow_left">
+            <div class="menuBg">
+                <div class="mainMenu">
+                    <div class="navItem">
+                        <a href="./characterIntro.html">
+                            <h1>角色介紹</h1>
+                            <h2>CHARACTERS</h2>
+                        </a>
+                    </div>
+                    <div class="navItem">
+                        <a href="./episodeList.html">
+                            <h1>追番</h1>
+                            <h2>EPISODES</h2>
+                        </a>
+                    </div>
+                    <div class="navItem">
+                        <a href="./eventsCalendar.html">
+                            <h1>活動日程</h1>
+                            <h2>EVENTS</h2>
+                        </a>
+                    </div>
+                    <div class="navItem">
+                        <a href="./products.html">
+                            <h1>周邊商品</h1>
+                            <h2>PRODUCTS</h2>
+                        </a>
+                    </div>
+                    <div class="navItem">
+                        <a href="./staffList.html">
+                            <h1>製作團隊</h1>
+                            <h2>PRODUCTION</h2>
+                        </a>
+                    </div>
+                    <div class="navItem">
+                        <a href="./contactUs.html">
+                            <h1>聯絡我們</h1>
+                            <h2>CONTACT US</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menuWindow_right"></div>
+    </div>
+
+    <div class="titleBox">
+        <h1>活動資訊</h1>
+        <h2>EVENTS CALENDAR</h2>
+        <div class="triangleDivider"></div>
+    </div>
+
+
+    <div id="calendar"></div>
+
+</body>
+
+</html>

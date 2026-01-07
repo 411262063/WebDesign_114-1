@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁</title>
+
+    <!-- boostrap的 -->
+    <script src="./assets/bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assets/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+    <!-- splide的 -->
+    <script src="./assets/splide-4.1.3/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="./assets/splide-4.1.3/dist/css/splide-core.min.css">
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+
+<body>
+    <!-- 底部sns -->
+    <div id="snsBox">
+        <a href="https://x.com/?lang=zh-Hant" class="snsItem">
+            <img src="./images/圖片-所有頁面通用/sns-X.png" alt="sns-X">
+        </a>
+
+        <a href="https://www.instagram.com/crazy_hamster_01_19/" class="snsItem">
+            <img src="./images/圖片-所有頁面通用/sns-IG.png" alt="sns-IG">
+        </a>
+
+        <a href="https://youtu.be/0m8GxerTH4w" class="snsItem">
+            <img src="./images/圖片-所有頁面通用/sns-YT.png" alt="sns-YT">
+        </a>
+    </div>
+
+    <!-- 選單+主視覺 -->
+    <div id="mainArea" , class="area">
+        <div class="mainArea_left">
+            <div class="logotype"></div>
+            <div class="menuBg">
+                <div class="mainMenu">
+                    <div class="navItem">
+                        <a href="./characterIntro.html">
+                            <h1>角色介紹</h1>
+                            <h2>CHARACTERS</h2>
+                        </a>
+                    </div>
+
+                    <div class="navItem">
+                        <a href="./episodeList.html">
+                            <h1>追番</h1>
+                            <h2>EPISODES</h2>
+                        </a>
+                    </div>
+
+                    <div class="navItem">
+                        <a href="./eventsCalendar.html">
+                            <h1>活動日程</h1>
+                            <h2>EVENTS</h2>
+                        </a>
+                    </div>
+
+                    <div class="navItem">
+                        <a href="./products.html">
+                            <h1>周邊商品</h1>
+                            <h2>PRODUCTS</h2>
+                        </a>
+                    </div>
+
+                    <div class="navItem">
+                        <a href="./staffList.html">
+                            <h1>製作團隊</h1>
+                            <h2>PRODUCTION</h2>
+                        </a>
+                    </div>
+
+                    <div class="navItem">
+                        <a href="./contactUs.html">
+                            <h1>聯絡我們</h1>
+                            <h2>CONTACT US</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mainArea_right"></div>
+    </div>
+
+    <!-- 最新消息 -->
+    <div class="titleBox">
+        <h1>最新消息</h1>
+        <h2>NEWS</h2>
+        <div class="triangleDivider"></div>
+    </div>
+
+    <div id="newsArea" , class="area">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+
+            <div class="accordion-item newsBox0">
+                <h2 class="accordion-header">
+                    <div class="traingle0 triangleMarker"></div>
+                    <div class="summaryBox">
+                        2025.03.21 <br> 慶祝粉絲突破1萬！
+                    </div>
+                    <button class="myCollapsedBtn collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse01" aria-expanded="false" aria-controls="flush-collapse01">
+                        <div class="traingle0"></div>
+                    </button>
+                </h2>
+                <div id="flush-collapse01" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <hr>
+                        <div class="descriptionBox">
+                            感謝大家的支持！
+                            為了慶祝粉絲突破1萬，我們
+                            正在贈送好棒棒三聲！謝謝大家長久以來的支持 。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item newsBox0">
+                <h2 class="accordion-header">
+                    <!-- 左邊三角形 -->
+                    <div class="traingle0 triangleMarker"></div>
+                    <!-- 摘要(摺疊) -->
+                    <div class="summaryBox">025.03.13 <br> 第1話：劇情簡介及預覽片段發布</div>
+                    <!-- 覆蓋按鈕樣式 (右邊三角形) -->
+                    <button class="myCollapsedBtn collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse02" aria-expanded="false" aria-controls="flush-collapse02">
+                        <!-- 按鈕上白色倒三角圖案 -->
+                        <div class="traingle0"></div>
+                    </button>
+                </h2>
+                <div id="flush-collapse02" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="descriptionBox">
+                            第一集劇情簡介和搶先看片段已經發布！
+                            <br>概要
+                            <br>第一集：《與你共舞》
+                            <br>小明和小文一同登台演出，媽媽在後台看他們的舞蹈曖昧，決定介入這場表演。
+                        </div>
+                        <hr>
+                        <div class="previewImgsBox">
+                            <img src="./images/圖片-首頁/最新_第一集：《與你共舞》-1.png" alt="">
+                            <img src="./images/圖片-首頁/最新_第一集：《與你共舞》-2.png" alt="">
+                            <img src="./images/圖片-首頁/最新_第一集：《與你共舞》-3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item newsBox0">
+                <h2 class="accordion-header">
+                    <div class="traingle0 triangleMarker"></div>
+                    <div class="summaryBox">024.12.11 <br> 【無聲之伴的迴旋】的演員們也將登台！粉絲答謝活動「超超超~超~ 牛逼線下粉絲見面會」即將舉行！</div>
+                    <button class="myCollapsedBtn collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse03" aria-expanded="false" aria-controls="flush-collapse03">
+                        <div class="traingle0"></div>
+                    </button>
+                </h2>
+                <div id="flush-collapse03" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <hr>
+                        <div class="descriptionBox">
+                            2025年 02月 30日，由媒肝控肉株式會社製作的動漫粉絲答謝活動。
+                            <br>當天，包括小明、小文、淑華在內的聲優將登台，首次公佈有關動畫的最新情報，並與聲優們進行交流。
+                            <br>此外，還將有原作者親自撰寫的迷你朗讀表演。歡迎前來體驗這部只有在本次活動中才能欣賞到的特別故事。
+                            <br>◆ 活動資訊
+                            <br>・活動名稱：超超超~超~ 牛逼線下粉絲見面會
+                            <br>・日期和時間：2025年 02月 30日，14:00-17:10（計畫）
+                            <br>・地點：台北商業大學 (324桃園市平鎮區福龍路一段100號)
+                            <br>・參與方式：免費入場（需提前預約）
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item newsBox0">
+                <h2 class="accordion-header">
+                    <div class="traingle0 triangleMarker"></div>
+                    <div class="summaryBox">
+                        2024.09.08 <br> 【無聲之伴的迴旋】2025年TV放送決定！
+                    </div>
+                    <button class="myCollapsedBtn collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse04" aria-expanded="false" aria-controls="flush-collapse04">
+                        <div class="traingle0"></div>
+                    </button>
+                </h2>
+                <div id="flush-collapse04" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <hr>
+                        <div class="descriptionBox">
+                            創新動畫【無聲之半的迴旋】將於2025年播出!
+                            <br>官方已公開預告片、製作人員名單、其他聲優資訊以及片頭曲資訊。
+                            <br>主要製作人員和片頭曲演唱者也發表了評論。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 簡介 -->
+    <div class="titleBox">
+        <h1>簡介</h1>
+        <h2>INTRODUCTION</h2>
+        <div class="triangleDivider"></div>
+    </div>
+
+    <div id="introArea" class="area">
+        <div class="introBox">
+            <span>
+                戀物癖患者小明的潛意識世界中，
+                <br>他渴望被理解——無論是來自這個世界，還是來自母親。
+                <br>某天，他鼓起勇氣向母親介紹自己的愛人小文，
+                <br>卻沒想到，母親的一個決定，成為她一生的遺憾。
+            </span>
+        </div>
+    </div>
+
+    <!-- 片段輪播 -->
+    <div class="titleBox">
+        <h1>精彩片段</h1>
+        <h2>HIGHLIGHTS</h2>
+        <div class="triangleDivider"></div>
+    </div>
+
+    <div id="carouselArea" , class="area">
+        <!-- splide structure 基本架構-->
+        <div class="crlBox localCenterPos">
+            <section class="splide" aria-label="Splide Basic HTML Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="./images//圖片-追番/第一話.png" alt="...">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./images/圖片-追番/第二話.png" alt="...">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./images/圖片-追番/第三話.png" alt="...">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./images/圖片-追番/第四話.png" alt="...">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./images/圖片-追番/第五話.png" alt="...">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./images/圖片-追番/第六話.png" alt="...">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./images/圖片-追番/第七話.png" alt="...">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="./images/圖片-追番/第八話.png" alt="...">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <!-- 1 slide per move -->
+        <!-- splide >> options 所有參數用法 -->
+        <script>
+            var splide = new Splide('.splide', {
+                type: 'loop',
+                perPage: 3,
+                perMove: 1,
+                autoplay: true,
+                // 每隔多久播(切換)一次
+                interval: 1000,
+                // 關閉左右箭頭
+                arrows: false,
+                // 關閉分頁按鈕
+                pagination: false,
+            });
+
+            splide.mount();
+        </script>
+    </div>
+
+    <!-- 播放訊息 -->
+    <div class="titleBox">
+        <h1>播放訊息</h1>
+        <h2>ON AIR/STREAMING</h2>
+        <div class="triangleDivider"></div>
+    </div>
+
+    <div id="streamingArea" class="area">
+        <div class="introBox">
+            <h1>播映日期</h1>
+            <hr class="dashLine">
+            <span class="tvStationWord">華映電視台</span>
+            <span class="streamTimeWord">每週日下午 9:00 起</span>
+            <hr class="solidLine">
+            <span class="tvStationWord">海島電視台</span>
+            <span class="streamTimeWord">每週日下午 9:00 起</span>
+            <hr class="solidLine">
+            <span class="tvStationWord">光禾電視台</span>
+            <span class="streamTimeWord">每週日下午 9:00 起</span>
+            <hr class="solidLine">
+            <h2>※播出日期及時間可能因節目安排等原因而有所變更。敬請諒解。</h2>
+        </div>
+    </div>
+</body>
+
+</html>

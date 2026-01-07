@@ -1,0 +1,231 @@
+.introBox {
+    width: 1000px;
+    background-color: var(--color-pink);
+    border-radius: 80px;
+    position: relative;
+    text-align: center;
+    color: var(--color-cream);
+}
+
+.introBox span {
+    font-size: 30px;
+    text-align: center;
+    color: var(--color-cream);
+}
+
+/* ============= 選單+主美術 ============== */
+
+#mainArea {
+    position: relative;
+    width: 100%;
+    height: min-content;
+    display: flex;
+}
+
+.mainArea_left {
+    position: relative;
+    width: 50%;
+    display: flex;
+    /* 改成直向排列 */
+    flex-direction: column;  
+    align-items: center;     
+    padding-top: 20px;
+    gap: 20px;
+}
+
+.logotype {
+    width: 600px; 
+    height: 200px;
+    background-image: url(../images/圖片-所有頁面通用/左上角標準字.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.mainArea_right {
+    width: 50%;
+    height: 1200px;
+    background-image: url(../images/圖片-所有頁面通用/主視覺海報.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ============= 最新消息(摺疊內容) ============== */
+#newsArea .accordion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;  /* ← 設定在這裡 */
+}
+
+/* 
+    flex-direction: 主軸的排列方向 row橫 col直
+    content -> 排列的整體 (每一排)
+    items -> 排列的個體 (每排裡面的個體)
+    justify -> 控制主軸 
+    align -> 控制交叉軸
+*/
+
+/* 覆蓋套件的按鈕樣式 */
+.newsBox0.accordion-item {
+    width: 1000px;
+    height: auto;
+    position: relative;
+    background-color: var(--color-pink);
+    border-radius: 50px !important;
+    border: none;
+    transition: all 0.5s ease;
+    padding: 20px 30px;
+    color: var(--color-cream);
+}
+
+/* 右上角的圓形三角形按鈕 用來代替原本的展開按鈕 */
+.myCollapsedBtn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50% !important;
+    background-color: var(--color-brown);
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+
+    /* 先預設轉180度 (正三角形)  但網頁開啟時會是摺疊狀態*/
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+
+    /* 使三角形置中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 摺疊狀態時轉0度 (倒三角形) */
+.myCollapsedBtn.collapsed {
+    transform: rotate(0deg);
+}
+
+.triangleMarker {
+    position: absolute;
+    top: 19px;
+    left: 40px;
+    border-top: 25.8px solid var(--color-brown) !important;
+}
+
+/* 摺疊狀態下的摘要 */
+.summaryBox {
+    width: 85%;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 80px;
+
+    color: var(--color-cream);
+}
+
+/* 展開的內容 */
+.descriptionBox {
+    font-size: 16px;
+}
+
+/* 展開的圖片 */
+.previewImgsBox {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    gap: 2px;
+}
+
+.previewImgsBox img {
+    width: 33%;
+    aspect-ratio: 16 /9;
+}
+
+/* ============= 簡介 ============== */
+#introArea{
+    display: flex;
+    justify-content: center; 
+}
+
+#introArea .introBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+
+/* ============= 精彩片段(輪播) ============== */
+#carouselArea {
+    height: 350px;
+}
+
+.crlBox {
+    width: 100%;
+    /* 緊貼子物件的高度 */
+    height: min-content;
+    overflow: hidden;
+}
+
+/* 覆蓋splide_list 使顯示模式為flex */
+.splide__list {
+    align-items: center;
+    display: flex;
+}
+
+.splide__slide img {
+    /* 讓圖片寬度 = slide寬度 (slide會自己計算寬度) */
+    width: 100%;
+    /* 設定長寬比 */
+    aspect-ratio: 16 / 9;
+    /* 圖片會填滿這個區域 */
+    object-fit: cover;
+}
+
+/* ============= 播放訊息 ============== */
+#streamingArea {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 250px;
+}
+
+#streamingArea .introBox {
+    padding-top: 30px;
+    height: 400px;
+}
+
+#streamingArea .introBox h1 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.tvStationWord {
+    font-weight: 600;
+}
+
+.streamTimeWord {
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+#streamingArea .introBox span {
+    font-size: 20px;
+    color: white;
+}
+
+#streamingArea .introBox h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+.dashLine {
+    border: 2px dashed var(--color-red);
+    opacity: 1;
+}
+
+.solidLine {
+    border: 2px solid var(--color-red);
+    opacity: 1;
+}

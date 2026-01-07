@@ -1,0 +1,84 @@
+#contactArea{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitleBox{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--color-brown);
+    height: min-content;
+}
+
+.commentSection{
+    position: relative;
+    width: 1000px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: var(--color-cream);
+    display: flex; 
+    align-items: center;
+    padding-left: 50px;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.commentSection textarea{
+    width: 90%;
+    height: 80px;
+    border: none;
+    background: transparent;
+    outline: none; /*移除點選外框*/
+}
+
+.commentSection button{
+    width: 65px;
+    height: 60px;
+    background-color:var(--color-brown);
+    border: none;
+    border-radius: 50%;
+    font-size: 28px;
+    line-height: 60px;
+    color: var(--color-blue);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.commentSection button:hover{
+    background-color: #ffffff;/*不會變色的按鈕不是好按鈕*/
+}
+
+
+.infoBox{
+    width: 950px;
+    height: 300px;
+    border-radius: 50px;
+    background-color: var(--color-cream);
+    padding: 2px 50px;
+}
+
+.officialWeb{
+    text-align: center;
+    font-size: 20px;
+    color: var(--color-brown);
+    height: 50px;
+    line-height: 50px;
+}
+
+.infoBox hr{
+    border: 0.5px solid var(--color-pink) ;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.infoBox span{
+    line-height: 45px;
+    color: var(--color-brown);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+

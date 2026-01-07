@@ -1,0 +1,117 @@
+#introArea .accordion {
+    display: flex;
+    align-items: center;
+    width: min-content;
+    height: 450px;
+    position: relative;   
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.introBox.accordion-item{
+    display: flex !important;
+    position: relative;
+    margin: 0px 25px;
+    overflow: visible;
+
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.myCollapsedBtn{
+    border: none;
+    background-color: rgba(1, 1, 1, 0) !important;
+    width: 180px;
+    aspect-ratio: 9/16;
+    z-index: 1;
+    justify-content: center;
+    position: relative;
+}
+
+.charOutterRange{
+    background-color: var(--color-brown);
+    width: 175px;
+    aspect-ratio: 8/19;
+    border-radius: 84px;
+    object-fit: cover;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    left: 47%;
+    overflow: hidden;
+}
+
+.charImg{
+    width: 150%;
+    height: auto;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 25px;
+}
+
+.c2{
+    left: 90px;
+}
+
+.c3{
+    left: 100px;
+}
+
+.coverFrame{
+    width: auto;
+    height: 175%;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+}
+
+.detailedBox {
+    position: relative;
+    width: 600px; 
+    height: 100%;
+    padding: 20px;
+    background-color: var(--color-red);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.charInnerRange{
+    position: absolute;
+    height: 360px;
+    aspect-ratio: 9/16;
+}
+
+.charInnerRange img{
+    
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: auto;
+    z-index: 2;
+}
+
+.detailedBox span{
+    font-size: 16px;
+    position: absolute;
+    left: 250px;
+    display: block;
+}
+
+.collapse-horizontal {
+    left: 210px;
+    top: 0;
+    height: 325px;
+    width: 600px;
+    transition: width 0.3s ease;
+    overflow: visible;
+}
+
+.collapse-horizontal.collapsed{
+    width: 0px;
+    height: 325px;
+}
+

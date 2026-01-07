@@ -1,0 +1,34 @@
+#videoArea {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 1200px;
+    height: min-content;
+
+    padding: 50px;
+}
+
+.videoBg {
+    width: 100%;
+    height: 480px;
+    background-color: var(--color-brown);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#videoPlayer {
+    height: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 10px;
+}
+
+#episodeTitle {
+    text-align: right;
+    color: var(--color-brown);
+    font-size: 30px;
+    font-weight: 400;
+}
